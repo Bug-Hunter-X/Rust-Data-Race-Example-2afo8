@@ -1,0 +1,1 @@
+fn main() {    let mut x = 5;    let y = &mut x;    let z = &mut x;    *y = 6;    *z = 7;    println!("x = {}", x);}This code leads to a data race because both `y` and `z` are mutable references to `x`, violating Rust's borrowing rules.  The compiler will prevent this code from compiling.
