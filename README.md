@@ -1,0 +1,1 @@
+This repository demonstrates a simple example of a data race in Rust.  The `bug.rs` file contains code that attempts to create multiple mutable references to the same variable.  This violates Rust's ownership and borrowing rules, resulting in a compile-time error. The `bugSolution.rs` file shows how to correctly handle the situation, avoiding the data race.
